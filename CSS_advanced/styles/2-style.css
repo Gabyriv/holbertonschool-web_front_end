@@ -1,0 +1,17 @@
+/* Set foreground color and settings for links */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #161616;
+    a:visually-hidden {
+        display: none;
+    }
+    a:card-category {
+        color: #D73953
+    }
+    a:section-tagline {
+        color: #D73953
+    }
+}
