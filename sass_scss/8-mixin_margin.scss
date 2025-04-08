@@ -1,0 +1,38 @@
+/*
+ * Sass file that assigns:
+ * Margin left and right at 10px to body tags
+ * Margin left and right at 15px to div tags
+ */
+@mixin margin-directional(
+$margin-top: null,
+$margin-right: null,
+$margin-bottom: null,
+$margin-left: null,
+) {
+  @if $margin-top {
+    margin-top: $margin-top;
+  }
+  @if $margin-right {
+    margin-right: $margin-right;
+  }
+  @if $margin-bottom {
+    margin-bottom: $margin-bottom;
+  }
+  @if $margin-left {
+    margin-left: $margin-left;
+  }
+}
+
+body {
+  @include margin-directional(
+  $margin-right: 10px,
+  $margin-left: 10px,
+  )
+}
+
+div {
+  @include margin-directional(
+  $margin-right: 15px,
+  $margin-left: 15px,
+  )
+}
