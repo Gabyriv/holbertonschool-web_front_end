@@ -3,6 +3,8 @@
     2. LAYOUT
     3. SECTION
     4. CARD
+    
+Code that is commented out it's removed becuase we are changing that to use the flex method
 */
 
 /*** 1. GLOBAL ***/
@@ -366,20 +368,24 @@ a:active {
 /* Grid
       ============================= */
 
+.row {
+    display: flex;
+}
+
 ul.row {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.row::after {
+/* .row::after {
     content: '';
     display: table;
     clear: both;
-}
+} */
 
 [class*='col-'] {
-    float: left;
+    /* float: left; */
     padding: 0.5rem;
 }
 
